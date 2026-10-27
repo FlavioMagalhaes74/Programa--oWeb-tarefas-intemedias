@@ -1,0 +1,566 @@
+/* =========================================================
+   DEFINIÇÃO DOS TEMAS COM NOMES PERSONALIZADOS
+   ========================================================= */
+
+/* 1. Neon Nocturne (Tema Escuro / Roxo Padrão) */
+body.theme-dark {
+  --bg-body: #1e1e24;
+  --bg-header: #111116;
+  --bg-card: #2b2b36;
+  --bg-input: #1e1e24;
+  --bg-table: #202028;
+  --text-main: #f0f0f0;
+  --text-muted: #888899;
+  --primary: #6c5ce7;
+  --primary-hover: #5844e3;
+  --secondary: #a29bfe;
+  --border-color: #3f3f52;
+  --border-table: #444455;
+  --border-input: #555566;
+  --link-color: #74b9ff;
+  --btn-reset: #555566;
+  --btn-reset-hover: #66667a;
+}
+
+/* 2. Deep Space Odyssey (Tema Espacial com GIF images/space.gif) */
+body.theme-space {
+  background-color: #020208;
+  background-image: url("images/space.gif"), url("../images/space.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  --bg-body: transparent;
+  --bg-header: rgba(5, 5, 18, 0.85);
+  --bg-card: rgba(13, 17, 38, 0.82);
+  --bg-input: rgba(6, 9, 24, 0.9);
+  --bg-table: rgba(10, 14, 32, 0.88);
+  --text-main: #e2e8f8;
+  --text-muted: #8fa0c9;
+  --primary: #5352ed;
+  --primary-hover: #3742fa;
+  --secondary: #70a1ff;
+  --border-color: rgba(112, 161, 255, 0.35);
+  --border-table: rgba(112, 161, 255, 0.25);
+  --border-input: #5352ed;
+  --link-color: #00d2d3;
+  --btn-reset: #2f3542;
+  --btn-reset-hover: #57606f;
+}
+
+body.theme-space section,
+body.theme-space header {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px rgba(83, 82, 237, 0.25);
+}
+
+body.theme-space #sobre-mim img {
+  box-shadow: 0 0 25px rgba(0, 210, 211, 0.6);
+  border-color: #00d2d3;
+}
+
+body.theme-space h1,
+body.theme-space h2 {
+  text-shadow: 0 0 12px rgba(112, 161, 255, 0.6);
+}
+
+/* 3. Monochrome Horizon (Degradê Fade de Preto para Branco) */
+body.theme-fade-bw {
+  background: linear-gradient(180deg, #000000 0%, #2b2b2b 35%, #888888 70%, #ffffff 100%) no-repeat fixed;
+  background-size: cover;
+  --bg-body: transparent;
+  --bg-header: rgba(0, 0, 0, 0.9);
+  --bg-card: rgba(25, 25, 25, 0.88);
+  --bg-input: #111111;
+  --bg-table: rgba(18, 18, 18, 0.95);
+  --text-main: #f5f5f5;
+  --text-muted: #bbbbbb;
+  --primary: #ffffff;
+  --primary-hover: #cccccc;
+  --secondary: #e0e0e0;
+  --border-color: #555555;
+  --border-table: #666666;
+  --border-input: #777777;
+  --link-color: #ffffff;
+  --btn-reset: #333333;
+  --btn-reset-hover: #4d4d4d;
+}
+
+body.theme-fade-bw header h1,
+body.theme-fade-bw header nav a {
+  color: #ffffff;
+}
+
+body.theme-fade-bw th,
+body.theme-fade-bw input[type="submit"] {
+  color: #000000;
+}
+
+/* 4. Prism Static (Degradê Estático de Todas as Cores RGB) */
+body.theme-prism-static {
+  background: linear-gradient(135deg, #ff0055 0%, #ff7700 18%, #ffea00 36%, #00e676 54%, #00b0ff 72%, #651fff 88%, #d500f9 100%) no-repeat fixed;
+  background-size: cover;
+  --bg-body: transparent;
+  --bg-header: rgba(10, 10, 15, 0.94);
+  --bg-card: rgba(15, 15, 22, 0.9);
+  --bg-input: #0c0c12;
+  --bg-table: rgba(12, 12, 18, 0.92);
+  --text-main: #ffffff;
+  --text-muted: #dcdcdc;
+  --primary: #00e5ff;
+  --primary-hover: #ff007f;
+  --secondary: #ffea00;
+  --border-color: #00e5ff88;
+  --border-table: #ff007f88;
+  --border-input: #ffea00;
+  --link-color: #00e5ff;
+  --btn-reset: #2c2c3d;
+  --btn-reset-hover: #404058;
+}
+
+body.theme-prism-static input[type="submit"] {
+  color: #000000;
+}
+
+body.theme-prism-static th {
+  color: #000000;
+  background-color: #00e5ff;
+}
+
+/* 5. Cyber Vapor (Retrofuturista / Synthwave) */
+body.theme-retro {
+  --bg-body: #0b0f19;
+  --bg-header: #05070c;
+  --bg-card: #111827;
+  --bg-input: #0b0f19;
+  --bg-table: #0f172a;
+  --text-main: #e2e8f0;
+  --text-muted: #64748b;
+  --primary: #00e5ff;
+  --primary-hover: #00b4cc;
+  --secondary: #ff007f;
+  --border-color: #ff007f55;
+  --border-table: #00e5ff55;
+  --border-input: #00e5ff;
+  --link-color: #00e5ff;
+  --btn-reset: #334155;
+  --btn-reset-hover: #475569;
+}
+
+/* 6. Shadow Bunker (Survival Horror / Metro) */
+body.theme-horror {
+  --bg-body: #0d0a0a;
+  --bg-header: #050404;
+  --bg-card: #181212;
+  --bg-input: #0d0a0a;
+  --bg-table: #140e0e;
+  --text-main: #d1c7bd;
+  --text-muted: #796e65;
+  --primary: #8b0000;
+  --primary-hover: #a30000;
+  --secondary: #c29b38;
+  --border-color: #3a1a1a;
+  --border-table: #4a2828;
+  --border-input: #5c2020;
+  --link-color: #e58e26;
+  --btn-reset: #2b1d1d;
+  --btn-reset-hover: #3d2b2b;
+}
+
+/* 7. Solstice Pure (Claro / Minimalista) */
+body.theme-light {
+  --bg-body: #eef2f7;
+  --bg-header: #ffffff;
+  --bg-card: #ffffff;
+  --bg-input: #f8fafc;
+  --bg-table: #f1f5f9;
+  --text-main: #2d3436;
+  --text-muted: #636e72;
+  --primary: #0984e3;
+  --primary-hover: #076bbb;
+  --secondary: #0984e3;
+  --border-color: #dfe6e9;
+  --border-table: #b2bec3;
+  --border-input: #cbd5e1;
+  --link-color: #00cec9;
+  --btn-reset: #b2bec3;
+  --btn-reset-hover: #95a5a6;
+}
+
+/* 8. Matrix Terminal (Verde Hacker com GIF images/code.gif) */
+body.theme-matrix {
+  background-color: #020502;
+  background-image: url("images/code.gif"), url("../images/code.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  --bg-body: transparent;
+  --bg-header: rgba(2, 6, 2, 0.88);
+  --bg-card: rgba(4, 14, 4, 0.84);
+  --bg-input: rgba(2, 8, 2, 0.92);
+  --bg-table: rgba(3, 10, 3, 0.88);
+  --text-main: #00ff66;
+  --text-muted: #00aa44;
+  --primary: #00ff66;
+  --primary-hover: #00cc52;
+  --secondary: #55ff99;
+  --border-color: rgba(0, 255, 102, 0.35);
+  --border-table: rgba(0, 255, 102, 0.3);
+  --border-input: #00ff66;
+  --link-color: #adff2f;
+  --btn-reset: #0d260d;
+  --btn-reset-hover: #164016;
+}
+
+body.theme-matrix section,
+body.theme-matrix header {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 0 18px rgba(0, 255, 102, 0.2);
+}
+
+body.theme-matrix h1,
+body.theme-matrix h2 {
+  text-shadow: 0 0 10px rgba(0, 255, 102, 0.5);
+}
+
+body.theme-matrix #sobre-mim img {
+  box-shadow: 0 0 20px rgba(0, 255, 102, 0.5);
+  border-color: #00ff66;
+}
+
+/* 9. Sonic Velocity (Azul & Dourado inspirados na franchise Sonic) */
+body.theme-sonic {
+  --bg-body: #061325;
+  --bg-header: #030a14;
+  --bg-card: #0d2342;
+  --bg-input: #061325;
+  --bg-table: #081a33;
+  --text-main: #e8f4fd;
+  --text-muted: #6fa0d1;
+  --primary: #1e90ff;
+  --primary-hover: #0070e0;
+  --secondary: #ffd700;
+  --border-color: #ffd70044;
+  --border-table: #1e90ff55;
+  --border-input: #1e90ff;
+  --link-color: #ffd700;
+  --btn-reset: #1a2f47;
+  --btn-reset-hover: #294668;
+}
+
+/* 10. RGB Chroma Overdrive (Efeito RGB dinâmico animado em loop contínuo) */
+@keyframes rgb-background-flow {
+  0%   { background-color: #1a0505; }
+  33%  { background-color: #051a08; }
+  66%  { background-color: #050d1a; }
+  100% { background-color: #1a0505; }
+}
+
+@keyframes rgb-spectrum-text {
+  0%   { color: #ff0055; }
+  20%  { color: #ff9900; }
+  40%  { color: #00ff66; }
+  60%  { color: #00e1ff; }
+  80%  { color: #bb00ff; }
+  100% { color: #ff0055; }
+}
+
+@keyframes rgb-spectrum-border {
+  0%   { border-color: #ff0055; }
+  33%  { border-color: #00ff66; }
+  66%  { border-color: #00e1ff; }
+  100% { border-color: #ff0055; }
+}
+
+body.theme-rgb {
+  animation: rgb-background-flow 12s ease-in-out infinite;
+  animation-fill-mode: both;
+  --bg-body: transparent;
+  --bg-header: #050508;
+  --bg-card: rgba(15, 15, 25, 0.9);
+  --bg-input: #000000;
+  --bg-table: rgba(10, 10, 18, 0.9);
+  --text-main: #ffffff;
+  --text-muted: #aaaaaa;
+  --primary: #ff007f;
+  --primary-hover: #00e5ff;
+  --secondary: #00ffcc;
+  --border-color: #ff007f;
+  --border-table: #00ffcc;
+  --border-input: #ff007f;
+  --link-color: #00ffff;
+  --btn-reset: #252538;
+  --btn-reset-hover: #3a3a55;
+}
+
+body.theme-rgb p,
+body.theme-rgb li,
+body.theme-rgb td,
+body.theme-rgb label {
+  animation: rgb-spectrum-text 8s linear infinite;
+}
+
+body.theme-rgb h1,
+body.theme-rgb h2,
+body.theme-rgb h3 {
+  animation: rgb-spectrum-text 5s linear infinite;
+}
+
+body.theme-rgb header,
+body.theme-rgb section,
+body.theme-rgb #sobre-mim img,
+body.theme-rgb table,
+body.theme-rgb th,
+body.theme-rgb td {
+  animation: rgb-spectrum-border 6s linear infinite;
+}
+
+/* 11. Parchment Archive (Read Mode / Sépia para Leitura Confortável) */
+body.theme-reader {
+  --bg-body: #f4ecd8;
+  --bg-header: #e8dcbe;
+  --bg-card: #fdf6e2;
+  --bg-input: #f4ecd8;
+  --bg-table: #ede2c5;
+  --text-main: #2b261f;
+  --text-muted: #6e6252;
+  --primary: #8b5a2b;
+  --primary-hover: #6d441e;
+  --secondary: #8b5a2b;
+  --border-color: #d8c8a5;
+  --border-table: #cbb991;
+  --border-input: #cbb991;
+  --link-color: #a04000;
+  --btn-reset: #b8a686;
+  --btn-reset-hover: #9c8b6b;
+  font-family: "Georgia", "Cambria", "Times New Roman", serif;
+  line-height: 1.8;
+}
+
+body.theme-reader main {
+  max-width: 760px;
+}
+
+body.theme-reader .genre {
+  background-color: #2b2216;
+  color: #ffd700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+body.theme-reader .band {
+  color: #1b6623;
+  font-weight: bold;
+}
+
+/* =========================================================
+   ESTILOS GERAIS DA PÁGINA
+   ========================================================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-body, #1e1e24);
+  color: var(--text-main, #f0f0f0);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+hr {
+  display: none;
+}
+
+header {
+  background-color: var(--bg-header, #111116);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--primary, #6c5ce7);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  color: var(--text-main, #ffffff);
+}
+
+/* Seletor de Tema */
+.theme-switcher {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.theme-switcher label {
+  font-weight: bold;
+  color: var(--text-main, #ffffff);
+}
+
+.theme-switcher select {
+  padding: 7px 14px;
+  border-radius: 6px;
+  background-color: var(--bg-card, #2b2b36);
+  color: var(--text-main, #f0f0f0);
+  border: 1.5px solid var(--primary, #6c5ce7);
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--secondary, #a29bfe);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--text-main, #ffffff);
+  text-decoration: underline;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background-color: var(--bg-card, #2b2b36);
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+h2 {
+  color: var(--secondary, #a29bfe);
+  border-bottom: 2px solid var(--border-color, #3f3f52);
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+h3 {
+  color: var(--text-main, #ffffff);
+  margin-top: 20px;
+}
+
+#sobre-mim img {
+  border-radius: 50%;
+  border: 3px solid var(--primary, #6c5ce7);
+  display: block;
+  margin: auto;
+}
+
+ul, ol {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: var(--link-color, #74b9ff);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: var(--bg-table, #202028);
+}
+
+th, td {
+  border: 1px solid var(--border-table, #444455);
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: var(--primary, #6c5ce7);
+  color: #ffffff;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: var(--bg-input, #1e1e24);
+  border: 1px solid var(--border-input, #555566);
+  border-radius: 4px;
+  color: var(--text-main, #ffffff);
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--primary, #6c5ce7);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+input[type="reset"] {
+  background-color: var(--btn-reset, #555566);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary-hover, #5844e3);
+}
+
+input[type="reset"]:hover {
+  background-color: var(--btn-reset-hover, #66667a);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-muted, #888899);
+  font-size: 14px;
+}
+
+/* Destaques temáticos do texto */
+.band {
+  color: rgb(0, 255, 0);
+}
+
+.games {
+  color: rgb(0, 166, 255);
+}
+
+.music {
+  color: red;
+}
+
+.genre {
+  color: rgb(255, 247, 0);
+}
